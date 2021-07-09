@@ -1,4 +1,63 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            html,body{
+                height: 100%;
+                margin:0;
+            }
+            body{
+                background-color: blanchedalmond;
+            }
+            #title{
+                display: block;
+                text-align: center;
+                background-color: beige;
+                font-size: 2rem;
+            }
+            #resultsContainer{
+                display: block;
+                text-align: center;
+                background-color: beige;
+                font-size: 2rem;
+            }
+            
+            #buttonsContainer{
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                height: 30%;
+            }
+            .playButtons{
+                border:0;
+                padding: 10px;
+                background-color: aqua;
+                cursor: pointer;
+                height: 7vh;
+                width: 20%;
+                border-radius: 15px;
+            }
+            #winnerText{
+                color: blue;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="title"> 
+            <p>Welcome to Rock paper Scissors. Click on any button to play</p>
+        </div>
+        <div id="buttonsContainer"> 
+            <button class="playButtons" id="rockButton">Rock</button>
+            <button class="playButtons" id="paperButton">Paper</button>
+            <button class="playButtons" id="scissorsButton">Scissors</button>
+        </div>
+        <div id="resultsContainer">
+            <p id="currentRoundWinner"></p>
+            <p id="scores">Your Score: 0, Computer Score: 0</p>
+            <p id="winnerText"></p>
+        </div>
+    </body>
     <script src="rps.js"> </script>
 </html>
